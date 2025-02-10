@@ -1,37 +1,30 @@
 <h1>
-  Payment Results
+  Random Results
 </h1>
 
 <dl>
   <dt>
-    APR
+    Minimum
   </dt>
   <dd>
-   <%= @user_apr %>
+    <%= @min_input %>
+  </dd>
+
+    <dt>
+    Maximum
+  </dt>
+  <dd>
+    <%= @max_input %>
   </dd>
 
   <dt>
-    Number of years
+    Random number
   </dt>
   <dd>
-    <%= @years %>
-  </dd>
-
-  <dt>
-    Principal
-  </dt>
-  <dd>
-    <%= @user_principal %>
-  </dd>
-
-  <dt>
-    Payment
-  </dt>
-  <dd>
-    <%= @user_payment %>
+    <%= @rand_num %>
   </dd>
 </dl>
 
-<a href="/payment/new">
-  Calculate another payment
+<a href="/random/new">
+  Pick another random number
 </a>
